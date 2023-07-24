@@ -4,7 +4,6 @@ from contextlib import contextmanager
 from time import time
 from typing import Optional
 
-import streamlit as st
 
 from tortoise.api import TextToSpeech
 from tortoise.utils.audio import load_voices
@@ -17,7 +16,7 @@ def timeit(desc=""):
     print(f"{desc} took {time() - start:.2f} seconds")
 
 
-@st.cache_resource(max_entries=1)
+
 def load_model(
     model_dir,
     high_vram,
@@ -35,7 +34,7 @@ def load_model(
     )
 
 
-@st.cache_data
+
 def list_voices(extra_voices_dir: Optional[str]):
     voices = ["random"]
     if extra_voices_dir and os.path.isdir(extra_voices_dir):
@@ -50,7 +49,7 @@ def list_voices(extra_voices_dir: Optional[str]):
     return voices, extra_voices_ls
 
 
-@st.cache_resource(max_entries=1)
+
 def load_voice_conditionings(voice, extra_voices_ls):
     gc.collect()
     voice_samples, conditioning_latents = load_voices(voice, extra_voices_ls)

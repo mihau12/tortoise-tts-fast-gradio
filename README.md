@@ -1,14 +1,14 @@
-**
-Gradio interface for Tortoise-tts-fast**
+
+**Gradio interface for Tortoise-tts-fast**
 
 Installation
 
 ```sh
-!git clone https://github.com/mihau12/tortoise-tts-fast-gradio.git
-%cd tortoise-tts-fast-gradio
-!pip3 install -e .
-!pip3 install -r requirements.txt
-!pip3 install git+https://github.com/152334H/BigVGAN.git
+git clone https://github.com/mihau12/tortoise-tts-fast-gradio.git
+cd tortoise-tts-fast-gradio
+pip3 install -e .
+pip3 install -r requirements.txt
+pip3 install git+https://github.com/152334H/BigVGAN.git
 ```
 
 

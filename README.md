@@ -13,7 +13,7 @@ pip3 install git+https://github.com/152334H/BigVGAN.git
 
 **Gradio Webui**
 ```sh
-python tortoise-tts-gradio/scripts/gradioapp.py
+python /tortoise-tts-fast-gradio/scripts/gradioapp.py
 ```
 
 

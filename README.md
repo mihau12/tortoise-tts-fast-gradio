@@ -1,7 +1,7 @@
+****
+**Gradio interface for Tortoise-tts-fast******
 
-**Gradio interface for Tortoise-tts-fast**
-
-Installation
+**Installation**
 
 ```sh
 git clone https://github.com/mihau12/tortoise-tts-fast-gradio.git
